@@ -33,7 +33,7 @@ namespace DecisionsAssessment.Pages
 
         public async Task<string> GetOrderConfirmation()
         {
-            return await page.Locator("h2").InnerTextAsync();
+            return await csharpActions.GetTextForLocator("h2");
         }
     }
 }

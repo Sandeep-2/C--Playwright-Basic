@@ -34,7 +34,6 @@ namespace DecisionsAssessment.Tests
             await inventoryPage.OpenCart();
 
             Assert.AreEqual(items[1], await cartPage.GetItemName(), "Cart item does not match");
-            TestContext.WriteLine("Done till here");
 
             await cartPage.ProceedToCheckout();
 
